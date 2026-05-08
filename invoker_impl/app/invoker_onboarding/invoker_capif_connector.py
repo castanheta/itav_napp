@@ -1,59 +1,66 @@
-import os
-from opencapif_sdk import capif_invoker_connector,service_discoverer
+import asyncio
+
+from opencapif_sdk import capif_invoker_connector, service_discoverer
+
+from app.utils.logger import get_app_logger
+
+log = get_app_logger(__name__)
 
 
-INVOKER_CONFIG_FILE = os.getenv('INVOKER_CONFIG_FILE', './invoker_impl/app/invoker_onboarding/invoker_config_sample.json')
-INVOKER_ACCESS_TOKEN_FILE = os.getenv('INVOKER_ACCESS_TOKEN_FILE', './invoker_impl/invoker_folder/ppavlidis/jwt_token.txt')
+class CAPIFClient:
 
-def _write_to_file(filename, content):
-    """
-    Writes the given content to a file with the specified filename.
+    def __init__(self, config_file: str) -> None:
+        self._config_file = config_file
+        self._token: str | None = None
+        self._connector: capif_invoker_connector | None = None
+        self._discoverer: service_discoverer | None = None
 
-    Args:
-        filename (str): The path to the file where the content will be written.
-        content (str): The content to write to the file.
+    def get_token(self) -> str | None:
+        return self._token
 
-    Side Effects:
-        Creates or overwrites the file at the specified filename with the provided content.
-        Prints a confirmation message indicating the file written to.
-    """
-    if os.path.exists(filename):
-        os.remove(filename)
+    async def onboard(self) -> None:
+    
+        log.info("CAPIF: starting invoker onboarding")
 
-    with open(filename, "w", encoding='utf-8') as f:
-        f.write(content)
-    print(f"Wrote content to {filename}")
+        config_file = self._config_file
 
-def onboard_invoker() -> str:
-    """
-    Onboards an invoker to the CAPIF system, discovers available services, retrieves a JWT access token, 
-    prints it, and writes it to a file.
-    This function performs the following steps:
-    1. Initializes the CAPIF invoker connector using the provided configuration file.
-    2. Onboards the invoker to the CAPIF system.
-    3. Initializes the service discoverer using the same configuration file.
-    4. Discovers available services.
-    5. Retrieves JWT tokens from the service discoverer.
-    6. Prints the obtained JWT token.
-    7. Writes the JWT token to a specified access token file.
+        def _do_onboard():
+            connector = capif_invoker_connector(config_file=config_file)
+            connector.onboard_invoker()
+            discoverer = service_discoverer(config_file=config_file)
+            discoverer.discover()
+            return connector, discoverer
 
-    Raises:
-        Any exceptions raised by the underlying connector or file operations.
-    """
+        self._connector, self._discoverer = await asyncio.to_thread(_do_onboard)
+        log.info("CAPIF: invoker onboarding complete")
 
-    capif_connector = capif_invoker_connector(config_file=INVOKER_CONFIG_FILE)
+    async def offboard(self) -> None:
+        
+        log.info("CAPIF: starting invoker offboarding")
+        if self._connector is None:
+            log.warning("CAPIF: offboard called but connector is not initialised — skipping")
+            return
 
-    capif_connector.onboard_invoker()
+        connector = self._connector
 
-    discoverer_svc = service_discoverer(config_file=INVOKER_CONFIG_FILE)
-    discoverer_svc.discover()
+        def _do_offboard():
+            connector.offboard_invoker()
 
+        try:
+            await asyncio.to_thread(_do_offboard)
+            log.info("CAPIF: invoker offboarding complete")
+        except Exception as exc:
+            log.error("CAPIF: offboarding failed (best-effort, continuing shutdown): %s", exc)
 
-    discoverer_svc.get_tokens()
-    jwt_token=discoverer_svc.token
+    async def refresh_token(self) -> None:
+        discoverer = self._discoverer
 
-    return jwt_token
+        def _do_refresh():
+            discoverer.discover()
+            discoverer.get_tokens()
+            return discoverer.token
 
-    # print("JWT TOKEN: ", jwt_token)
+        token = await asyncio.to_thread(_do_refresh)
+        self._token = token
+        log.info("CAPIF: token refreshed successfully")
 
-    # _write_to_file(INVOKER_ACCESS_TOKEN_FILE, jwt_token)
