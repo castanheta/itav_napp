@@ -1,0 +1,10 @@
+{
+    "register_host": "10.220.2.43",
+    "capif_register_port": "8084",
+    "capif_register_username": "admin",
+    "capif_register_password": "password123",
+    "capif_username": "ppavlidis",
+    "capif_password": "ppavlidis",
+    "config_path": "./register",
+    "uuid": ""
+}

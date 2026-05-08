@@ -1,0 +1,24 @@
+{
+  "msisdn": "+306912345678",
+  "notificationDestination": "http://127.0.0.1:8004/receive"
+}
+
+
+curl -X POST "http://127.0.0.1:8000/3gpp-monitoring-event/v1/1/subscriptions" \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1ODkyNDg0MCwianRpIjoiMDI4MjNmM2MtMzdiZS00OGI5LWE2YWItYTNjNWIzNGY5YmExIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IklOVjNiOWE3NzI5MDFmZDY5MzIzMTk0NmU3YzdiMWE2NyIsIm5iZiI6MTc1ODkyNDg0MCwiY3NyZiI6IjBkM2JjNGFhLTZkZDctNDQwYy05ZTY3LWY2NTdmMzU5OWZkZCIsImV4cCI6MTc1ODkyNTQ0MCwiaXNzIjoiSU5WM2I5YTc3MjkwMWZkNjkzMjMxOTQ2ZTdjN2IxYTY3Iiwic2NvcGUiOiIzZ3BwI0FFRjBmYzRjMjZjYzVkMjhiOTAxZWRlY2Q4M2FiMjBkMzozZ3BwLW1vbml0b3JpbmctZXZlbnQiLCJyZXNfb3duZXJfaWQiOm51bGx9.pPMmgvCSow7wi9cLN6lYyY9wpiatB7UFCNJb494Sg_ApEmd0MQwU2SIrxk8OdHhDnOdqYcT7t0Ovq7z1UXLZMvIAYGIEEt6sZVYKY0xNUnQLqen-Ow37R1SvwtmjfGV5pfFz49hcAdL5kqpfiSa202YTNZm_xDYA3Z-dBYtlzEsugHx1Sb9dUdV7kqj_6Sif8g0unc3nuvtPMwcBwhR5TIHPnVM7SQlpdxT3ff548fojFwnEhrrd58vbH0WCwH9iB5vdh_E2C0B36Cql9kXxyTKelSUsgX30dIKEwUSEXDztmu55LYkl_R_K3KDdF3iDnqQaGX798dlZg7Cq5pn2Fw"
+  -d '{
+    "msisdn": "306912345678",
+    "notificationDestination": "http://127.0.0.1:8004/receive",
+    "monitoringType": "LOCATION_REPORTING",
+    "locationType": "LAST_KNOWN_LOCATION"
+  }'
+
+
+
+
+
+
+
+
+  curl -X 'POST' 'http://127.0.0.1:8008/invoker-app/v1/location' -H 'accept: application/json' -H 'Content-Type: application/json' -d '{"msisdn": "+306912345678","notificationDestination": "http://127.0.0.1:8004/receive"}'

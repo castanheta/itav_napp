@@ -1,0 +1,42 @@
+{
+       "capif_host": "capifcore",
+       "register_host": "register",
+       "capif_https_port": "443",
+       "capif_register_port": "8084",
+       "capif_username": "atnoguser",
+       "capif_password": "atnogpass",
+       "debug_mode": "True",
+       "invoker": {
+              "invoker_folder": "./app/invoker_folder/",
+              "capif_callback_url": "http://localhost:5000",
+              "supported_features": "0",
+              "check_authentication_data": {
+                     "ip": "",
+                     "port": ""
+              },
+              "cert_generation": {
+                     "csr_common_name": "invokerCSR",
+                     "csr_organizational_unit": "ATNOG unit",
+                     "csr_organization": "IT",
+                     "csr_locality": "Aveiro",
+                     "csr_state_or_province_name": "Aveiro",
+                     "csr_country_name": "PT",
+                     "csr_email_address": "atnog@ua.pt"
+              },
+              "discover_filter": {
+                     "api-name": "",
+                     "api-version": "",
+                     "comm-type": "",
+                     "protocol": "",
+                     "aef-id": "",
+                     "data-format": "",
+                     "api-cat": "",
+                     "preferred-aef-loc": "",
+                     "req-api-prov-name": "",
+                     "supported-features": "",
+                     "api-supported-features": "",
+                     "ue-ip-addr": "",
+                     "service-kpis": ""
+              }
+       }
+}

@@ -1,0 +1,35 @@
+services:
+  provider_app:
+    build:
+      context: .
+      dockerfile: ./provider_impl/Dockerfile
+    container_name: provider_onboard
+    restart: on-failure
+    env_file: .env
+    ports:
+      - "8000"
+    networks:
+      - ocf-integration-network
+    profiles:
+      - provider
+  invoker_app:
+    build:
+      context: .
+      dockerfile: ./invoker_impl/Dockerfile
+    container_name: invoker
+    restart: unless-stopped
+    env_file: .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "capifcore:${CAPIF_IP}"
+      - "register:${CAPIF_IP}"
+    ports:
+      - "8008:8000"
+    networks:
+      - ocf-integration-network
+      - shared
+networks:
+  ocf-integration-network:
+    driver: bridge
+  shared:
+    external: true
