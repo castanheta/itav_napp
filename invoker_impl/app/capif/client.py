@@ -64,3 +64,22 @@ class CAPIFClient:
         self._token = token
         log.info("CAPIF: token refreshed successfully")
 
+    async def run_token_refresh_loop(self, interval_seconds: int = 300) -> None:
+        while True:
+            try:
+                await asyncio.sleep(interval_seconds)
+
+                log.info("CAPIF: refreshing token")
+                await self.refresh_token()
+
+            except asyncio.CancelledError:
+                log.info("CAPIF: token refresh loop cancelled — exiting")
+                return
+
+            except Exception as exc:
+                log.error(
+                    "CAPIF: token refresh failed, keeping stale token. "
+                    "Will retry in %ds. Error: %s",
+                    interval_seconds,
+                    exc,
+                )
