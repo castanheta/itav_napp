@@ -11,7 +11,7 @@ from requests import Response
 from requests.exceptions import RequestException
 
 from app.config import get_settings
-from app.dependencies import get_task_registry
+from app.dependencies import get_task_registry, get_capif_token
 from app.schemas.scaling_operations import (
     OperationStatus,
     ScalingAction,
@@ -197,9 +197,12 @@ async def _run_operation(
             raise ValueError("Missing provider_target_url configuration.")
 
         log.info("Starting scaling operation task_id=%s", task_id)
-        from app.invoker_onboarding.invoker_capif_connector import onboard_invoker
-
-        jwt_token = onboard_invoker()
+        if settings.capif_enabled:
+            jwt_token = get_capif_token()
+            if jwt_token is None:
+                raise RuntimeError("CAPIF token is not available")
+        else:
+            jwt_token = None
         steps = _build_step_plan(request, target_type)
 
         for step in steps:
