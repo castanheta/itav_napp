@@ -43,99 +43,35 @@ def _build_step_url(path_suffix: str) -> str:
     return f"{settings.provider_target_url.rstrip('/')}/{path_suffix.lstrip('/')}"
 
 
-def _build_target_payload(
-    request: SliceScalingOperationRequest | UserScalingOperationRequest,
-    target_type: ScalingTargetType,
-) -> dict:
-    target: dict = {"targetType": target_type.value}
-    if target_type == ScalingTargetType.SLICE:
-        target["sliceId"] = request.sliceId
-    elif request.imsis is not None:
-        target["imsis"] = request.imsis
-    else:
-        target["ipAddresses"] = request.ipAddresses
-    return target
-
-
-def _antenna_payload(id: str, ran: str) -> dict:
-    antenna_payload = {
-        "antenna_id": f"{id}",
-        "ran": f"{ran}",
-    }
-    return antenna_payload
-
-
-def _power_payload(id: str, power: int, ran: str) -> dict:
-    power_payload = {
-        "antenna_id": f"{id}",
-        "modifications": {"MIMO": True, "max_transmit_power": power},
-        "ran": f"{ran}",
-    }
-    return power_payload
-
-
 def _build_step_plan(
     request: SliceScalingOperationRequest | UserScalingOperationRequest,
-    target_type: ScalingTargetType,
 ) -> list[PlannedStep]:
-    target_payload = _build_target_payload(request, target_type)
-    throughput_payload = {
-        **target_payload,
-        "action": request.action.value,
-        "uplinkKbps": request.uplinkKbps,
-        "downlinkKbps": request.downlinkKbps,
-    }
+    cells_endpoint = _build_step_url("/ran/bbus/aveiro-seaport/cells")
     scale_up_steps = [
         PlannedStep(
-            method="post",
-            name="scale_throughput",
-            endpoint=_build_step_url("/network-ops/moveToSlice/"),
-            payload=throughput_payload,
-        ),
-        PlannedStep(
-            method="post",
-            name="set_151_antenna_state",
-            endpoint=_build_step_url("/ran/antenna/activate"),
-            payload=_antenna_payload("151", "aveiroseaport"),
-        ),
-        PlannedStep(
-            method="post",
-            name="set_153_antenna_state",
-            endpoint=_build_step_url("/ran/antenna/activate"),
-            payload=_antenna_payload("153", "aveiroseaport"),
-        ),
-        PlannedStep(
-            method="put",
-            name="set_152_antenna_power",
-            endpoint=_build_step_url("/ran/antenna/modify"),
-            payload=_power_payload("152", 242, "aveiroseaport"),
+            method="patch",
+            name="activate_cells",
+            endpoint=cells_endpoint,
+            payload={
+                "cell_ids": [151, 152, 153],
+                "operation": "activate",
+                "properties": {"max_transmit_power": 242},
+            },
         ),
     ]
 
     scale_down_steps = [
         PlannedStep(
-            method="post",
-            name="scale_throughput",
-            endpoint=_build_step_url("/network-ops/moveToSlice/"),
-            payload=throughput_payload,
+            method="patch",
+            name="deactivate_cells",
+            endpoint=cells_endpoint,
+            payload={"cell_ids": [151, 153], "operation": "deactivate"},
         ),
         PlannedStep(
-            method="post",
-            name="set_151_antenna_state",
-            endpoint=_build_step_url("/ran/antenna/deactivate"),
-            payload=_antenna_payload("151", "aveiroseaport"),
-        ),
-        PlannedStep(
-            method="post",
-            name="set_153_antenna_state",
-            endpoint=_build_step_url("/ran/antenna/deactivate"),
-            payload=_antenna_payload("153", "aveiroseaport"),
-        ),
-        PlannedStep(
-            method="put",
-            name="set_152_antenna_power",
-            endpoint=_build_step_url("/ran/antenna/modify"),
-            payload=_power_payload("152", 70, "aveiroseaport"),
+            method="patch",
+            name="set_152_cell_power",
+            endpoint=f"{cells_endpoint}/152",
+            payload={"properties": {"max_transmit_power": 70}},
         ),
     ]
 
@@ -166,6 +102,18 @@ async def _put_json(url: str, payload: dict, jwt_token: str | None = None) -> Re
 
     def _request() -> Response:
         response = requests.put(url, json=payload, headers=headers, timeout=10)
+        return response
+
+    return await asyncio.to_thread(_request)
+
+
+async def _patch_json(
+    url: str, payload: dict, jwt_token: str | None = None
+) -> Response:
+    headers = _build_headers(jwt_token)
+
+    def _request() -> Response:
+        response = requests.patch(url, json=payload, headers=headers, timeout=10)
         return response
 
     return await asyncio.to_thread(_request)
@@ -203,13 +151,17 @@ async def _run_operation(
                 raise RuntimeError("CAPIF token is not available")
         else:
             jwt_token = None
-        steps = _build_step_plan(request, target_type)
+        steps = _build_step_plan(request)
 
         for step in steps:
             if step.method == "post":
                 response = await _post_json(step.endpoint, step.payload, jwt_token)
-            else:
+            elif step.method == "put":
                 response = await _put_json(step.endpoint, step.payload, jwt_token)
+            elif step.method == "patch":
+                response = await _patch_json(step.endpoint, step.payload, jwt_token)
+            else:
+                raise ValueError(f"Unsupported scaling step method: {step.method}")
 
             if response.status_code >= 400:
                 detail = response.text
