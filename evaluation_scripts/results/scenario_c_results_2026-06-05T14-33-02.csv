@@ -1,0 +1,21 @@
+run_id,test_case,expected_response,observed_response,success,operation_executed,response_time_ms,error_message,timestamp
+1,valid_jwt,202 Accepted,200,True,True,24.34239700960461,,2026-06-05T14:33:02.049829
+2,valid_jwt,202 Accepted,200,True,True,14.909684003214352,,2026-06-05T14:33:02.565204
+3,valid_jwt,202 Accepted,200,True,True,16.606402990873903,,2026-06-05T14:33:03.082585
+4,valid_jwt,202 Accepted,200,True,True,11.791572003858164,,2026-06-05T14:33:03.595175
+5,valid_jwt,202 Accepted,200,True,True,12.251769992872141,,2026-06-05T14:33:04.108204
+6,invalid_jwt,401 Unauthorized,200,False,True,17.565707996254787,,2026-06-05T14:33:04.626552
+7,invalid_jwt,401 Unauthorized,200,False,True,12.178349003079347,,2026-06-05T14:33:05.139489
+8,invalid_jwt,401 Unauthorized,200,False,True,24.528530004317872,,2026-06-05T14:33:05.664778
+9,invalid_jwt,401 Unauthorized,200,False,True,11.757892003515735,,2026-06-05T14:33:06.177277
+10,invalid_jwt,401 Unauthorized,200,False,True,12.385181995341554,,2026-06-05T14:33:06.690161
+11,expired_jwt,401 Unauthorized,200,False,True,11.7995430045994,,2026-06-05T14:33:07.203103
+12,expired_jwt,401 Unauthorized,200,False,True,11.959626004681922,,2026-06-05T14:33:07.715784
+13,expired_jwt,401 Unauthorized,200,False,True,19.764654003665783,,2026-06-05T14:33:08.236309
+14,expired_jwt,401 Unauthorized,200,False,True,13.06313299573958,,2026-06-05T14:33:08.750126
+15,expired_jwt,401 Unauthorized,200,False,True,12.728738991427235,,2026-06-05T14:33:09.263591
+16,missing_jwt,401 Unauthorized,200,False,True,16.285566001897678,,2026-06-05T14:33:09.780603
+17,missing_jwt,401 Unauthorized,200,False,True,13.808956005959772,,2026-06-05T14:33:10.295168
+18,missing_jwt,401 Unauthorized,200,False,True,12.502723999205045,,2026-06-05T14:33:10.808429
+19,missing_jwt,401 Unauthorized,200,False,True,12.058898006216623,,2026-06-05T14:33:11.321245
+20,missing_jwt,401 Unauthorized,200,False,True,11.906204003025778,,2026-06-05T14:33:11.833938

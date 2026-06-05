@@ -1,0 +1,8 @@
+{
+  "experiment": "Scenario B - Direct Invocation Baseline",
+  "total_runs": 30,
+  "successful_runs": 30,
+  "failed_runs": 0,
+  "slice_manager_url": "http://10.16.255.51:8000/ran/bbus",
+  "capif_enabled": false
+}

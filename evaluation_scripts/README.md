@@ -39,9 +39,9 @@ Before running the scripts, verify the following configuration:
 1. **CAPIF Config File**: Ensure `invoker_impl/app/capif/invoker_config.json` exists and contains valid CAPIF credentials
 
 2. **Slice Manager Endpoint**: The scripts use the following default endpoints:
-   - Scenario A: `http://10.16.10.78:8000/ran/bbus`
-   - Scenario B: `http://10.16.10.78:8000/ran/bbus`
-   - Scenario C: `http://10.16.10.78:8000/ran/bbus`
+   - Scenario A: `http://10.16.255.51:8000/ran/bbus`
+   - Scenario B: `http://10.16.255.51:8000/ran/bbus`
+   - Scenario C: `http://10.16.255.51:8000/ran/bbus`
 
    Modify these URLs in the scripts if your Slice Manager is at a different address.
 
@@ -237,7 +237,7 @@ curl -v http://localhost:8000/ran/bbus
 Or for the testbed endpoint:
 
 ```bash
-curl -v http://10.16.10.78:8000/ran/bbus
+curl -v http://10.16.255.51:8000/ran/bbus
 ```
 
 ### CAPIF Onboarding Fails

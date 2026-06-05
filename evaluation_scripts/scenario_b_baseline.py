@@ -93,7 +93,7 @@ async def main():
     print("=" * 70 + "\n")
     
     # Configuration
-    SLICE_MANAGER_URL = "http://10.16.10.78:8000/ran/bbus"
+    SLICE_MANAGER_URL = "http://10.16.255.51:8000/ran/bbus"
     NUM_RUNS = 30
     OUTPUT_DIR = Path("evaluation_scripts/results")
     
