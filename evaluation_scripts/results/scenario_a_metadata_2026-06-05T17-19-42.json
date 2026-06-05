@@ -4,7 +4,7 @@
   "successful_runs": 30,
   "failed_runs": 0,
   "config_file": "invoker_impl/app/capif/invoker_config.json",
-  "slice_manager_url": "http://10.16.255.51:8000/ran/bbus",
+  "slice_manager_url": "http://10.16.10.78:8000/ran/bbus",
   "sample_identifiers": {
     "invoker_id": null,
     "service_api_id": null

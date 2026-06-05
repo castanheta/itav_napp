@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     invoker_port: int = 8001
     invoker_log_directory_path: str = "./invoker_impl/logs/"
     invoker_log_filename_path: str = "./invoker_impl/logs/app_logger"
-    provider_target_url: str = "https://10.16.10.77:8000"
+    provider_target_url: str = "https://10.16.10.78:8000"
     capif_enabled: bool = True
     capif_config_file: str = "app/capif/invoker_config.json"
 

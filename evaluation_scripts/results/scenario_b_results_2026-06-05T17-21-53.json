@@ -1,0 +1,242 @@
+[
+  {
+    "run_id": 1,
+    "direct_invocation_ms": 5.132616002811119,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:53.354085",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 2,
+    "direct_invocation_ms": 4.001606997917406,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:53.859777",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 3,
+    "direct_invocation_ms": 4.494605993386358,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:54.364568",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 4,
+    "direct_invocation_ms": 3.549479995854199,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:54.869849",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 5,
+    "direct_invocation_ms": 3.4677789954002947,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:55.374177",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 6,
+    "direct_invocation_ms": 3.461669009993784,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:55.878419",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 7,
+    "direct_invocation_ms": 3.2942150137387216,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:56.382678",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 8,
+    "direct_invocation_ms": 3.6240320041542873,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:56.886774",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 9,
+    "direct_invocation_ms": 3.3600960014155135,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:57.391192",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 10,
+    "direct_invocation_ms": 3.7099839973961934,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:57.895366",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 11,
+    "direct_invocation_ms": 3.712781996000558,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:58.399857",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 12,
+    "direct_invocation_ms": 3.550760986399837,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:58.904398",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 13,
+    "direct_invocation_ms": 3.854045004118234,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:59.408786",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 14,
+    "direct_invocation_ms": 3.547419997630641,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:59.913449",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 15,
+    "direct_invocation_ms": 5.028204992413521,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:00.417774",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 16,
+    "direct_invocation_ms": 3.70019199908711,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:00.923589",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 17,
+    "direct_invocation_ms": 3.716613005963154,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:01.428110",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 18,
+    "direct_invocation_ms": 3.680212001199834,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:01.932642",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 19,
+    "direct_invocation_ms": 3.511438990244642,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:02.437139",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 20,
+    "direct_invocation_ms": 3.4304779983358458,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:02.941412",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 21,
+    "direct_invocation_ms": 3.385857999091968,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:03.445625",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 22,
+    "direct_invocation_ms": 3.274695001891814,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:03.949860",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 23,
+    "direct_invocation_ms": 3.633791988249868,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:04.453913",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 24,
+    "direct_invocation_ms": 3.5316489957040176,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:04.958366",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 25,
+    "direct_invocation_ms": 3.8438850024249405,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:05.462702",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 26,
+    "direct_invocation_ms": 3.7145120004424825,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:05.967354",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 27,
+    "direct_invocation_ms": 3.804904001299292,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:06.471850",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 28,
+    "direct_invocation_ms": 3.4738690010271966,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:06.976452",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 29,
+    "direct_invocation_ms": 4.041068008518778,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:07.480758",
+    "http_status_code": 401
+  },
+  {
+    "run_id": 30,
+    "direct_invocation_ms": 3.6605619970941916,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:22:07.985610",
+    "http_status_code": 401
+  }
+]
