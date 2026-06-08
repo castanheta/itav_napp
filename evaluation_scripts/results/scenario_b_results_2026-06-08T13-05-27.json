@@ -1,0 +1,242 @@
+[
+  {
+    "run_id": 1,
+    "direct_invocation_ms": 36.85392998158932,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:27.810013",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 2,
+    "direct_invocation_ms": 15.440325951203704,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:28.347621",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 3,
+    "direct_invocation_ms": 12.735961005091667,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:28.863846",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 4,
+    "direct_invocation_ms": 13.034705014433712,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:29.377371",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 5,
+    "direct_invocation_ms": 16.431781987193972,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:29.891182",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 6,
+    "direct_invocation_ms": 13.706198951695114,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:30.408419",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 7,
+    "direct_invocation_ms": 14.112202974501997,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:30.922901",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 8,
+    "direct_invocation_ms": 15.34948404878378,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:31.437769",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 9,
+    "direct_invocation_ms": 14.405738038476557,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:31.953851",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 10,
+    "direct_invocation_ms": 13.279639999382198,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:32.469032",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 11,
+    "direct_invocation_ms": 13.552332995459437,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:32.983069",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 12,
+    "direct_invocation_ms": 13.367752020712942,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:33.497360",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 13,
+    "direct_invocation_ms": 13.600794016383588,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:34.011500",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 14,
+    "direct_invocation_ms": 22.796967008616775,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:34.525871",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 15,
+    "direct_invocation_ms": 15.37037396337837,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:35.049415",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 16,
+    "direct_invocation_ms": 12.437445984687656,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:35.565568",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 17,
+    "direct_invocation_ms": 12.570717954076827,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:36.078780",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 18,
+    "direct_invocation_ms": 13.663015968631953,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:36.592102",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 19,
+    "direct_invocation_ms": 12.408715963829309,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:37.106543",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 20,
+    "direct_invocation_ms": 12.66705000307411,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:37.619773",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 21,
+    "direct_invocation_ms": 12.888053024653345,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:38.133220",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 22,
+    "direct_invocation_ms": 12.549357954412699,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:38.646879",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 23,
+    "direct_invocation_ms": 12.385014968458563,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:39.160194",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 24,
+    "direct_invocation_ms": 15.62750997254625,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:39.673358",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 25,
+    "direct_invocation_ms": 13.789577991701663,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:40.189778",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 26,
+    "direct_invocation_ms": 12.73315103026107,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:40.704341",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 27,
+    "direct_invocation_ms": 12.6556699979119,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:41.217836",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 28,
+    "direct_invocation_ms": 15.694439003709704,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:41.731215",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 29,
+    "direct_invocation_ms": 15.4175860225223,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:42.247689",
+    "http_status_code": 200
+  },
+  {
+    "run_id": 30,
+    "direct_invocation_ms": 17.00970099773258,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-08T13:05:42.763867",
+    "http_status_code": 200
+  }
+]
