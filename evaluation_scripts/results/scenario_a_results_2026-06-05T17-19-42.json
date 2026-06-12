@@ -1,0 +1,542 @@
+[
+  {
+    "run_id": 1,
+    "onboarding_ms": 823.4458219958469,
+    "discovery_ms": 16.022010901360773,
+    "security_context_ms": 6.866576100583188,
+    "token_acquisition_ms": 166.99046400026418,
+    "protected_invocation_ms": 8.934482000768185,
+    "total_ms": 1022.2593549988233,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:42.955743",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 2,
+    "onboarding_ms": 882.5522309925873,
+    "discovery_ms": 19.930380395089742,
+    "security_context_ms": 8.541591597895604,
+    "token_acquisition_ms": 164.36818899819627,
+    "protected_invocation_ms": 9.745755000039935,
+    "total_ms": 1085.1381469838088,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:46.006748",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 3,
+    "onboarding_ms": 863.7966209935257,
+    "discovery_ms": 16.357246499683242,
+    "security_context_ms": 7.010248499864247,
+    "token_acquisition_ms": 199.3164799932856,
+    "protected_invocation_ms": 9.423709998372942,
+    "total_ms": 1095.9043059847318,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:49.119214",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 4,
+    "onboarding_ms": 920.3069020004477,
+    "discovery_ms": 20.419184103957377,
+    "security_context_ms": 8.751078901696019,
+    "token_acquisition_ms": 245.90650699974503,
+    "protected_invocation_ms": 9.014193012262695,
+    "total_ms": 1204.3978650181089,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:52.238407",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 5,
+    "onboarding_ms": 889.2109739972511,
+    "discovery_ms": 16.92266030149767,
+    "security_context_ms": 7.252568700641859,
+    "token_acquisition_ms": 168.27732299861964,
+    "protected_invocation_ms": 10.02923000487499,
+    "total_ms": 1091.6927560028853,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:55.478003",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 6,
+    "onboarding_ms": 779.1557520104107,
+    "discovery_ms": 15.288083294581154,
+    "security_context_ms": 6.552035697677638,
+    "token_acquisition_ms": 179.2853820079472,
+    "protected_invocation_ms": 9.277486999053508,
+    "total_ms": 989.5587400096701,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:19:58.593616",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 7,
+    "onboarding_ms": 740.5135400040308,
+    "discovery_ms": 19.989650799834635,
+    "security_context_ms": 8.56699319992913,
+    "token_acquisition_ms": 206.15256400196813,
+    "protected_invocation_ms": 8.839749003527686,
+    "total_ms": 984.0624970092904,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:01.610991",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 8,
+    "onboarding_ms": 722.4749550077831,
+    "discovery_ms": 18.44446519680787,
+    "security_context_ms": 7.904770798631944,
+    "token_acquisition_ms": 230.787591994158,
+    "protected_invocation_ms": 9.493730001850054,
+    "total_ms": 989.105512999231,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:04.625050",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 9,
+    "onboarding_ms": 928.5104500013404,
+    "discovery_ms": 15.582312199694568,
+    "security_context_ms": 6.6781337998691015,
+    "token_acquisition_ms": 152.70833199610934,
+    "protected_invocation_ms": 9.959728005924262,
+    "total_ms": 1113.4389560029376,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:07.644178",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 10,
+    "onboarding_ms": 683.9865219953936,
+    "discovery_ms": 15.234622903517446,
+    "security_context_ms": 6.5291241015074775,
+    "token_acquisition_ms": 184.55910000193398,
+    "protected_invocation_ms": 9.364287994685583,
+    "total_ms": 899.673656997038,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:10.784989",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 11,
+    "onboarding_ms": 845.7234350062208,
+    "discovery_ms": 19.80927199620055,
+    "security_context_ms": 8.489687998371664,
+    "token_acquisition_ms": 221.3976119965082,
+    "protected_invocation_ms": 10.141282007680275,
+    "total_ms": 1105.5612890049815,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:13.713603",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 12,
+    "onboarding_ms": 858.1057489936939,
+    "discovery_ms": 17.594460805412382,
+    "security_context_ms": 7.540483202319592,
+    "token_acquisition_ms": 170.09722600050736,
+    "protected_invocation_ms": 10.260973998811096,
+    "total_ms": 1063.5988930007443,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:16.846583",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 13,
+    "onboarding_ms": 820.5556189932395,
+    "discovery_ms": 21.32525850465754,
+    "security_context_ms": 9.139396501996089,
+    "token_acquisition_ms": 237.240150992875,
+    "protected_invocation_ms": 10.861083006602712,
+    "total_ms": 1099.1215079993708,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:19.937984",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 14,
+    "onboarding_ms": 703.4945449995575,
+    "discovery_ms": 23.921594898274634,
+    "security_context_ms": 10.252112099260557,
+    "token_acquisition_ms": 156.32802300387993,
+    "protected_invocation_ms": 9.981488998164423,
+    "total_ms": 903.9777639991371,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:23.067763",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 15,
+    "onboarding_ms": 829.5490540040191,
+    "discovery_ms": 18.16814999037888,
+    "security_context_ms": 7.786349995876662,
+    "token_acquisition_ms": 193.93385999137536,
+    "protected_invocation_ms": 9.343359008198604,
+    "total_ms": 1058.7807729898486,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:25.997235",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 16,
+    "onboarding_ms": 767.6428950071568,
+    "discovery_ms": 16.071935593208764,
+    "security_context_ms": 6.88797239708947,
+    "token_acquisition_ms": 168.40798601333518,
+    "protected_invocation_ms": 10.643940011505038,
+    "total_ms": 969.6547290222952,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:29.082826",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 17,
+    "onboarding_ms": 1058.0015500017907,
+    "discovery_ms": 18.337964407692198,
+    "security_context_ms": 7.859127603296656,
+    "token_acquisition_ms": 217.27457299130037,
+    "protected_invocation_ms": 13.343334998353384,
+    "total_ms": 1314.8165500024334,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:32.075470",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 18,
+    "onboarding_ms": 980.9851850004634,
+    "discovery_ms": 18.81743780541001,
+    "security_context_ms": 8.064616202318575,
+    "token_acquisition_ms": 177.61699500260875,
+    "protected_invocation_ms": 10.013709994382225,
+    "total_ms": 1195.497944005183,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:35.421114",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 19,
+    "onboarding_ms": 961.9832520111231,
+    "discovery_ms": 15.618929894117171,
+    "security_context_ms": 6.693827097478788,
+    "token_acquisition_ms": 172.5284269923577,
+    "protected_invocation_ms": 9.025042993016541,
+    "total_ms": 1165.8494789880933,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:38.641141",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 20,
+    "onboarding_ms": 768.8671769865323,
+    "discovery_ms": 16.68162509886315,
+    "security_context_ms": 7.149267899512779,
+    "token_acquisition_ms": 146.87806299480144,
+    "protected_invocation_ms": 11.279621001449414,
+    "total_ms": 950.8557539811591,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:41.835795",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 21,
+    "onboarding_ms": 789.9849050008925,
+    "discovery_ms": 17.38764999608975,
+    "security_context_ms": 7.451849998324178,
+    "token_acquisition_ms": 198.76782300707418,
+    "protected_invocation_ms": 10.129921007319354,
+    "total_ms": 1023.7221490096999,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:44.809853",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 22,
+    "onboarding_ms": 791.1504050134681,
+    "discovery_ms": 17.073260397592094,
+    "security_context_ms": 7.31711159896804,
+    "token_acquisition_ms": 219.87964799336623,
+    "protected_invocation_ms": 10.833382999408059,
+    "total_ms": 1046.2538080028025,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:47.859310",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 23,
+    "onboarding_ms": 790.6926669966197,
+    "discovery_ms": 15.706529296585357,
+    "security_context_ms": 6.731369698536582,
+    "token_acquisition_ms": 170.9281219955301,
+    "protected_invocation_ms": 10.278583999024704,
+    "total_ms": 994.3372719862964,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:50.934089",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 24,
+    "onboarding_ms": 875.7411949918605,
+    "discovery_ms": 17.28194160241401,
+    "security_context_ms": 7.406546401034575,
+    "token_acquisition_ms": 171.31336900638416,
+    "protected_invocation_ms": 10.172060996410437,
+    "total_ms": 1081.9151129981037,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:53.958117",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 25,
+    "onboarding_ms": 747.7170509955613,
+    "discovery_ms": 18.121661599434447,
+    "security_context_ms": 7.76642639975762,
+    "token_acquisition_ms": 179.60716600646265,
+    "protected_invocation_ms": 9.908627995173447,
+    "total_ms": 963.1209329963895,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:20:57.067822",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 26,
+    "onboarding_ms": 882.2843770030886,
+    "discovery_ms": 17.025673695025034,
+    "security_context_ms": 7.296717297867872,
+    "token_acquisition_ms": 209.85480699164327,
+    "protected_invocation_ms": 8.491263011819683,
+    "total_ms": 1124.9528379994445,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:00.059157",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 27,
+    "onboarding_ms": 1012.2092850069748,
+    "discovery_ms": 18.247306006378494,
+    "security_context_ms": 7.82027400273364,
+    "token_acquisition_ms": 193.85680499544833,
+    "protected_invocation_ms": 8.999141995445825,
+    "total_ms": 1241.132812006981,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:03.212935",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 28,
+    "onboarding_ms": 828.5729369963519,
+    "discovery_ms": 14.155786402989177,
+    "security_context_ms": 6.066765601281077,
+    "token_acquisition_ms": 147.28264200675767,
+    "protected_invocation_ms": 10.498867006390356,
+    "total_ms": 1006.5769980137702,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:06.480588",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 29,
+    "onboarding_ms": 829.0700950019527,
+    "discovery_ms": 18.347968097077683,
+    "security_context_ms": 7.863414898747578,
+    "token_acquisition_ms": 212.11504700477235,
+    "protected_invocation_ms": 12.816176997148432,
+    "total_ms": 1080.2127019996988,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:09.512845",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  },
+  {
+    "run_id": 30,
+    "onboarding_ms": 734.1966210078681,
+    "discovery_ms": 16.044705609965604,
+    "security_context_ms": 6.876302404270973,
+    "token_acquisition_ms": 216.16053499747068,
+    "protected_invocation_ms": 9.446078998735175,
+    "total_ms": 982.7242430183105,
+    "success": true,
+    "error_message": null,
+    "timestamp": "2026-06-05T17:21:12.622169",
+    "invoker_id": null,
+    "service_api_id": null,
+    "token_metadata": {
+      "length": 899,
+      "prefix": "eyJhbGciOiJSUzI1NiIs..."
+    }
+  }
+]

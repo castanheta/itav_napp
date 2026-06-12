@@ -1,0 +1,30 @@
+{
+  "experiment": "Scenario C - Security Enforcement",
+  "total_tests": 20,
+  "iterations_per_test_case": 5,
+  "slice_manager_url": "http://10.16.10.78:8000/ran/bbus",
+  "success_rates": {
+    "valid_jwt": "5/5",
+    "invalid_jwt": "5/5",
+    "expired_jwt": "5/5",
+    "missing_jwt": "5/5"
+  },
+  "test_cases": {
+    "valid_jwt": {
+      "expected": "202 Accepted",
+      "description": "Valid CAPIF-issued JWT"
+    },
+    "invalid_jwt": {
+      "expected": "401 Unauthorized",
+      "description": "Malformed JWT signature"
+    },
+    "expired_jwt": {
+      "expected": "401 Unauthorized",
+      "description": "JWT with expired timestamp"
+    },
+    "missing_jwt": {
+      "expected": "401 Unauthorized",
+      "description": "No Authorization header"
+    }
+  }
+}
